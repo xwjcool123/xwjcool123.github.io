@@ -1,7 +1,7 @@
 :root {
     --bg_color: #ffffff;
     --primary_color: #FF9999;
-    --secondary_color: #ffcccc;
+    --secondary_color: #ffffff;
     --text_color: #666666;
     --title_color: #333333;
 }
@@ -9,7 +9,7 @@
     :root {
         --bg_color: #222222;
         --primary_color: #333333;
-        --secondary_color: #000000;
+        --secondary_color: #cccccc;
         --text_color: #999999;
         --title_color: #cccccc;
     }
@@ -23,7 +23,7 @@ body {
 
 .heading {
     background-color: var(--primary_color);
-    color: var(--title_color);
+    color: var(--secondary_color);
     width: 90%;
     height: 64px;
     padding-left: 5%;
@@ -35,4 +35,43 @@ body {
     font-weight: 500;
     font-size: 2em;
     box-shadow: 0px 0px 5px #000c;
+    z-index: 100;
+}
+
+.lang {
+    position: absolute;
+    right: 5%;
+    top: 8px;
+    display: inline-block;
+}
+
+.lang {
+    fill: var(--secondary_color);
+    text-align: end;
+}
+
+.lang-options {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: var(--bg_color);
+    min-width: 80px;
+    box-shadow: 0px 0px 5px #000c;
+    font-weight: 300;
+    font-size: 0.5em;
+}
+
+.lang-options a {
+    color: var(--secondary_color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.lang-options a:hover {
+    background-color: var(--primary_color);
+}
+
+.lang:hover .lang-options{
+    display: block;
 }
