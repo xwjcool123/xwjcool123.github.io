@@ -34,8 +34,13 @@ body {
     font-family: "Noto Sans SC";
     font-weight: 500;
     font-size: 2em;
-    box-shadow: 0px 0px 5px #000c;
+    box-shadow: 0px 0px 5px #0009;
     z-index: 100;
+}
+
+.heading a {
+    text-decoration: none;
+    color: var(--secondary_color);
 }
 
 .lang {
@@ -43,9 +48,6 @@ body {
     right: 5%;
     top: 8px;
     display: inline-block;
-}
-
-.lang {
     fill: var(--secondary_color);
     text-align: end;
 }
@@ -56,13 +58,13 @@ body {
     right: 0px;
     background-color: var(--bg_color);
     min-width: 80px;
-    box-shadow: 0px 0px 5px #000c;
+    box-shadow: 0px 0px 5px #0009;
     font-weight: 300;
     font-size: 0.5em;
 }
 
 .lang-options a {
-    color: var(--secondary_color);
+    color: var(--text_color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -70,8 +72,14 @@ body {
 
 .lang-options a:hover {
     background-color: var(--primary_color);
+    color: var(--secondary_color);
+}
+
+.lang :hover{
+    cursor: pointer;
 }
 
 .lang:hover .lang-options{
     display: block;
+    transition: 1s;
 }
